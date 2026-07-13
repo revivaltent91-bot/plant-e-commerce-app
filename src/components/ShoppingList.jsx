@@ -1,5 +1,6 @@
 import { plantList } from '../datas/plantList'
 import '../styles/ShoppingList.css'
+import PlantItem from './PlantItem'
 export default function ShoppingList() {
     const plantCategory = [...new Set(plantList.map(({ category }) => category))]
     return (
@@ -18,11 +19,11 @@ export default function ShoppingList() {
                 <h2> Liste des produits  </h2>
                 <ul className="shop">
                     {plantList.map((plant) => (
-                        <li className="shop__product" key={plant.id}>
-                            {plant.name}
-                            {plant.isBestSale && <span>🔥 </span>}
-                            {plant.isSpecialOffer && <span className="product-sales">Solde</span> }
-                            </li>
+                        <PlantItem id={plant.id}
+                            name={plant.name}
+                            cover={plant.cover}
+                            water={plant.water}
+                            light={plant.light} />
                     ))}
 
                 </ul>

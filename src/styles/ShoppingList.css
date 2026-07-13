@@ -8,20 +8,3 @@
     gap: 10px;
 }
 
-.shop__product {
-    list-style-type: none;
-    border: 1px solid black;
-    height: 60px;
-    width: 50px;
-    padding: 80px;
-}
-.product-sales {
-    display: block;
-    position: relative;
-    bottom: 80px;
-    left: 65px;
-    padding: 8px;
-    border-radius: 2px;
-    background-color: aliceblue;
-    width: 100%;
-}
