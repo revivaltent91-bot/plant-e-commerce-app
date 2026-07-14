@@ -1,0 +1,23 @@
+.shop__product {
+    border: 1px solid black;
+    list-style-type: none;
+    /* height: 60px;
+    width: 50px; */
+    /* padding: 80px; */
+}
+
+.plant-cover {
+    height: 300px;
+    width:  300px;
+    border-radius: 20px;
+}
+.product-sales {
+    display: block;
+    position: relative;
+    bottom: 80px;
+    left: 65px;
+    /* padding: 8px; */
+    border-radius: 2px;
+    background-color: aliceblue;
+    width: 100%;
+}
