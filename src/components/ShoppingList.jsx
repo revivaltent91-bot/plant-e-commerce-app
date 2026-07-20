@@ -19,7 +19,7 @@ export default function ShoppingList() {
                 <h2> Liste des produits  </h2>
                 <ul className="shop">
                     {plantList.map((plant) => (
-                        <PlantItem id={plant.id}
+                        <PlantItem key={plant.id}
                             name={plant.name}
                             cover={plant.cover}
                             water={plant.water}

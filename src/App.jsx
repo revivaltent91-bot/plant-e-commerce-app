@@ -1,8 +1,8 @@
-import { useState } from 'react'
 import Banner from './components/Banner'
 import Cart from './components/Cart'
 import ShoppingList from './components/ShoppingList'
 import './App.css'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -15,6 +15,7 @@ function App() {
           <ShoppingList />
         </div>
       </div>
+      <Footer/>
     </>
   )
 }

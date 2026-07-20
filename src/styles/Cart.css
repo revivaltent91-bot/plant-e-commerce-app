@@ -1,7 +1,16 @@
 .shop-layout__basket {
+    display: flex;
+    flex-direction: column;
     background-color: #87b531;
     color: white;
-    padding: 32 px;
-    height: 60vh;
+    padding: 32px;
     width: 15%;
+}
+.shop-layout__basket--closeBtn{
+  margin-left: auto;
+}
+
+.basket-openBtn{
+    margin-right: 30px;
+    height: 30px;
 }
