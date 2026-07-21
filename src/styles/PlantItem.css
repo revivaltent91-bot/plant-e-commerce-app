@@ -1,9 +1,6 @@
 .shop__product {
-    border: 1px solid black;
     list-style-type: none;
-    /* height: 60px;
-    width: 50px; */
-    /* padding: 80px; */
+    margin: 20px;
 }
 
 .plant-cover {
@@ -18,6 +15,6 @@
     left: 65px;
     /* padding: 8px; */
     border-radius: 2px;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     width: 100%;
 }
