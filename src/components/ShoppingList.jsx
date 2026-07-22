@@ -34,18 +34,11 @@ export default function ShoppingList({ cart, updateCart, activeCategory, setActi
                 { name, price, amount: currentPlantSaved.amount + 1 }
             ])
 
-            localStorage.setItem("cart", JSON.stringify(
-                [
-                    ...carFilteredCurrentPlant,
-                    { name, price, amount: currentPlantSaved.amount + 1 }
-                ]
-            ))
         } else {
             updateCart(
                 [...cart, { name, price, amount: 1 }]
             )
-            //console.log(cart)
-            localStorage.setItem("cart", JSON.stringify([...cart, { name, price, amount: 1 }]))
+
         }
     }
     return (

@@ -1,9 +1,8 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState } from 'react'
 import '../styles/Cart.css'
 
 export default function Cart({ cart, updateCart, activeCategory, setActiveCategory }) {
     const [isOpen, setIsOpen] = useState(false)
-    const isFirstRender = useRef(true)
     const basketTotal = cart.reduce(
         (total, currentItem) => total + (currentItem.amount * currentItem.price), 0)
 
@@ -14,19 +13,7 @@ export default function Cart({ cart, updateCart, activeCategory, setActiveCatego
         }
     }
 
-    useEffect(() => {
-        if (isFirstRender.current) {
-            isFirstRender.current = false
-            return
-        }
-      //  alert(`J'aurai ${basketTotal}$ à payer 💸`)
-        document.title = `LMF -${basketTotal}$ d'achats`
-        const basket = localStorage.getItem("cart")
-        console.log(basket, JSON.parse(basket))
-        if (basket) {
-            updateCart(JSON.parse(basket))
-        }
-    }, [])
+    
 
 
     return isOpen ? (
